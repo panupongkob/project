@@ -35,7 +35,7 @@
         </div>
     </header>
      <!-- ====== END HEADER ====== -->
-
+     <!-- START THE FEATURETTES -->
       <nav class="navbar navbar-expand-md navbar-dark bg-success1">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,18 +48,10 @@
             <li class="nav-item px-5">
               <a class="nav-link" href="services.html">บริการ</a>
             </li>
-            <li class="nav-item active dropdown px-5">
-                  <a class="nav-link dropdown-toggle" href="work.html" id="navbarCollapse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    ผลงาน</a><span class="sr-only">(current)</span>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="lihgt.html">ไวนิล</a>
-                    <a class="dropdown-item" href="#">สติ๊กเกอร์</a>
-                    <a class="dropdown-item" href="#">ตู้ไฟ</a>
-                    <a class="dropdown-item" href="#">นามบัตร</a>
-                    <a class="dropdown-item" href="#">โครงเหล็ก</a>
-                  </div>
-            </li>
             <li class="nav-item px-5">
+              <a class="nav-link" href="work.html">ผลงาน</a>
+            </li>
+            <li class="nav-item active px-5">
               <a class="nav-link px-5" href="contact.html">เกี่ยวกับ</a>
             </li>
             <li class="nav-item">
@@ -68,57 +60,14 @@
           </ul>
         </div>
       </nav>
-
-        <!-- START THE FEATURETTES -->
-                    <div class="container">
-                      <hr>
-                      <h1 class="display-2 text-center font-special-style text-success1">ผลงาน</h1>
-                      <div class="row">
-                        <div class="col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full1.jpg">
-                            <img src="assets/img-work/1.jpg" class="img-fluid" alt="Image 1">
-                            </a>
-                        </div>
-                        <div class=" col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full2.jpg">
-                             <img src="assets/img-work/2.jpg" class="img-fluid" alt="Image 1">
-                             </a>
-                        </div>
-                        <div class=" col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full3.jpg">
-                            <img src="assets/img-work/3.jpg" class="img-fluid" alt="Image 1">
-                             </a>
-                        </div>
-
-                        <div class="col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full4.jpg">
-                            <img src="assets/img-work/4.jpg" class="img-fluid" alt="Image 1">
-                            </a>
-                        </div>
-                        <div class=" col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full5.jpg">
-                             <img src="assets/img-work/5.jpg" class="img-fluid" alt="Image 1">
-                             </a>
-                        </div>
-                        <div class=" col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full6.jpg">
-                            <img src="assets/img-work/6.jpg" class="img-fluid" alt="Image 1">
-                             </a>
-                        </div>
-
-                        <div class=" col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full7.jpg">
-                            <img src="assets/img-work/7.jpg" class="img-fluid" alt="Image 1">
-                             </a>
-                        </div>
-                        <div class=" col-lg-6 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-work/full8.jpg">
-                            <img src="assets/img-work/8.jpg" class="img-fluid" alt="Image 1">
-                             </a>
-                        </div>
-                    </div>
-                  </div>
           <!--END ITEM-->
+          <div class="bg-footer">
+            <div class="container pb-3">
+              <hr>
+              <h1 class="display-2 text-center font-special-style text-success1">แผนที่</h1>
+              <div id="map"></div>
+            </div>
+          </div>
           <!-- FOOTER -->
         <footer class="text-center bg-success1 py-2">
                 <div class="text-color"><p>&copy; 2018 Success media All Right Reserved.</p></div>
@@ -135,5 +84,24 @@
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
       <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
       <script type="text/javascript" src="assets/js/gmaps.js"></script>
+      <!--Map Marker-->
+      <script type="text/javascript">
+        var map;
+            $(document).ready(function(){
+            map = new GMaps({
+              el: '#map',
+            lat:  18.7753932,
+            lng: 98.98137426,
+             zoom:17
+            });
+
+            map.addMarker({
+            lat:  18.7753932,
+            lng: 98.9813742,
+              title: 'Lima'
+
+            });
+            });
+      </script>
   </body>
 </html>
