@@ -12,8 +12,10 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="assets/css/carousel.css" rel="stylesheet">
      <link href="assets/css/success-style.css" rel="stylesheet" type="text/css">
+
+       <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
   </head>
   <body>
 
@@ -158,7 +160,7 @@
                              </a>
                         </div>
                         <div class=" col-lg-4 mb-4">
-                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/img-service/full18.jpg">
+                            <a href="assets/img-service/full18.jpg" class="image-link" >
                             <img src="assets/img-service/18.jpg" class="img-fluid" alt="Image 1">
                              </a>
                         </div>
@@ -178,9 +180,17 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!-- BEGIN EXTEND JAVASCRIPT-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="assets/js/gmaps.js"></script>
+
+
+      <!-- Magnific Popup core JS file -->
+          <script src="assets/js/jquery.magnific-popup.min.js"></script>
+          <script type="text/javascript">
+            $(document).ready(function() {
+                    $('.image-link').magnificPopup({type:'image'});
+                    
+                  });
+          </script>
+
     <!--Map Marker-->
   </body>
 </html>
