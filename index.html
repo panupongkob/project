@@ -36,31 +36,38 @@
     </header>
      <!-- ====== END HEADER ====== -->
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-success1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarCollapse">
-          <ul class="navbar-nav ">
-            <li class="nav-item active px-5">
-              <a class="nav-link" href="index.html">หน้าหลัก</a>
-            </li>
-            <li class="nav-item px-5">
-              <a class="nav-link" href="services.html">บริการ</a>
-            </li>
-            <li class="nav-item px-5">
-              <a class="nav-link" href="work.html">ผลงาน</a>
-            </li>
-            <li class="nav-item px-5">
-              <a class="nav-link px-5" href="contact.html">เกี่ยวกับ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-5" href="about.html">ติดต่อ</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
+     <nav class="navbar navbar-expand-md navbar-dark bg-success1">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-md-center" id="navbarCollapse">
+         <ul class="navbar-nav ">
+           <li class="nav-item active px-5">
+             <a class="nav-link" href="index.html">หน้าหลัก</a>
+           </li>
+           <li class="nav-item px-5">
+             <a class="nav-link" href="services.html">บริการ</a>
+           </li>
+           <li class="nav-item dropdown px-5">
+                 <a class="nav-link dropdown-toggle" href="work.html" id="navbarCollapse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   ผลงาน</a><span class="sr-only">(current)</span>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="vinin.html">ไวนิล</a>
+                   <a class="dropdown-item" href="stwork.html">สติ๊กเกอร์</a>
+                   <a class="dropdown-item" href="light.html">ตู้ไฟ</a>
+                   <a class="dropdown-item" href="nam.html">นามบัตร</a>
+                   <a class="dropdown-item" href="kong.html">โครงเหล็ก</a>
+                 </div>
+           </li>
+           <li class="nav-item px-5">
+             <a class="nav-link px-5" href="about.html">เกี่ยวกับ</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link px-5" href="contact.html">ติดต่อ</a>
+           </li>
+         </ul>
+       </div>
+     </nav>
 
       <!--  ======= BEGIN VIDEOS  ========= -->
       <div class="bg-success">
@@ -197,14 +204,14 @@
           $(document).ready(function(){
           map = new GMaps({
             el: '#map',
-          lat:  18.7753932,
-          lng: 98.98137426,
+          lat:  18.7912182,
+          lng: 98.9839447,
            zoom:17
           });
 
           map.addMarker({
-          lat:  18.7753932,
-          lng: 98.9813742,
+          lat:   18.7912182,
+          lng: 98.9839447,
             title: 'Lima'
 
           });
