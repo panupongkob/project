@@ -29,11 +29,11 @@ font-style: normal;
     font-family: 'thai_sans_literegular', Lucida, Verdana, sans-serif;
 }
 .header-zone{
-	background-image: url("../img/BG1.jpg");
+	background-image: url("../img/bg1.jpg");
 	 background-repeat: repeat;
 	}
 	.bg-footer{
-	background-image: url("../img/BG2.jpg");
+	background-image: url("../img/bg2.jpg");
 	 background-repeat: repeat;
 	   background-position: center bottom;
 	}
